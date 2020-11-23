@@ -2,6 +2,8 @@ https://localhost:5001
 
 ###
 GET https://localhost:5001/todo
+###
+GET https://localhost:5001/todo2
 
 ###
 POST https://localhost:5001/todo HTTP/1.1

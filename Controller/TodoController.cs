@@ -23,7 +23,7 @@ namespace todo.Controller
         public async Task<ActionResult<TodoModel>> GetById(long id)
         {
             var todo = await context.Todo.FindAsync(id);
-            if (todo is null) return BadRequest();
+            if (todo == null) return BadRequest();
             return todo;
         }
         [HttpPost]
@@ -45,7 +45,7 @@ namespace todo.Controller
         public async Task<ActionResult<TodoModel>> Delete(long id)
         {
             var todo = await context.Todo.FindAsync(id);
-            if(todo is null) return BadRequest();
+            if(todo == null) return BadRequest();
             context.Todo.Remove(todo);
             await context.SaveChangesAsync();
             return NoContent();
