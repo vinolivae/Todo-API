@@ -1,4 +1,6 @@
 # Todo-API
+I made this API using InMemory database then can't need use SQL.
+
 First step: you'll need dotnet core 5 sdk installed;
 
 Second Step: to run you need to give the command "dotnet watch run";
